@@ -1,15 +1,17 @@
 "use client";
-import { useState } from "react";
 import { QuotesData } from "../../StaticData/services";
-
-import ServicesSlider from "@/app/component/servicesSlider/ServicesSlider";
+import WindowTinting from "../../component/sliders/WindowTinting";
 
 const Services = () => {
   return (
     <section id="services">
-      <div className="services_hero_aria">
+      <div className="services_hero_aria overflow-hidden">
         <div className="px-5 lg:px-24 pt-32 md:pt-40">
-          <div className="text-left">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="text-left"
+          >
             <h2 className="text-4xl">Paint Protection Film Installer</h2>
             <p className=" py-3 text-base lg:text-lg">
               If you’re looking for an affordable way to protect your vehicle’s
@@ -23,12 +25,12 @@ const Services = () => {
       </div>
       <div className=" mx-auto 2xl:px-5">
         <div className="mt-6">
-          <h2 className="text-2xl px-5 md:text-3xl text-center">
+          <h2 className="text-2xl px-5 pb-4 md:text-3xl text-center">
             Las Vegas Paint Protection Film Installer
           </h2>
           {/* ::::::Slider ::::::: */}
 
-          <ServicesSlider />
+          <WindowTinting />
 
           <div className="mt-5 sm:max-w-3xl mx-auto">
             {QuotesData.map((service, index) => (

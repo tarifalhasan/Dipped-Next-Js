@@ -5,7 +5,7 @@ const card = ({ img, title, subTitle, date, category }) => {
       <Image
         className="rounded w-full transform transition duration-500 hover:scale-90"
         src={img}
-        alt=""
+        alt={title}
       />
       <div className="flex gap-y-5 mt-2 flex-col">
         <h3 className="text-xl">{title}</h3>

@@ -93,18 +93,30 @@ export const gallary = [
 export const serviceGallaryImage = [
   {
     image1: serviceCar1,
-    image2: serviceCar2,
+
     id: 1,
   },
   {
-    image1: serviceCar3,
-    image2: serviceCar4,
+    image1: serviceCar2,
+
     id: 2,
   },
   {
     image1: serviceCar3,
-    image2: serviceCar4,
+
     id: 3,
+  },
+  {
+    image1: serviceCar4,
+    id: 5,
+  },
+  {
+    image1: serviceCar1,
+    id: 1,
+  },
+  {
+    image1: serviceCar4,
+    id: 6,
   },
 ];
 

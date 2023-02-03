@@ -32,16 +32,24 @@ const Window = () => {
   ];
   return (
     <section id="WindowTinting">
-      <div className="window_tinting_hero">
+      <div className="window_tinting_hero overflow-hidden">
         <div className="px-5 lg:px-24 pt-32">
           <div className=" pb-20 flex flex-col gap-5 lg:flex-row">
-            <div className="contact_box_2 basis-[100%] lg:basis-[40%] brounded-lg p-8">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              className="contact_box_2 basis-[100%] lg:basis-[40%] brounded-lg p-8"
+            >
               <h3>Window Tinting</h3>
               <p className="mt-6">
                 Offering quality window tinting for your vehicle
               </p>
             </div>
-            <div className=" relative  basis-[100%] lg:basis-[60%]">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              className=" relative  basis-[100%] lg:basis-[60%]"
+            >
               <div className="window_tinting_box_2 bg-[#222]  h-[299px] md:h-[515px] w-[94%]"></div>
               <div className="absolute top-7 left-8 ">
                 <Image className="h-full mx-auto " src={image} alt="tarif" />

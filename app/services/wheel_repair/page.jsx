@@ -4,7 +4,7 @@ import { WheelRepairData } from "../../StaticData/services";
 const WheelRepair = () => {
   return (
     <section id="WindowTinting">
-      <div className="wheel_hero_aria">
+      <div className="wheel_hero_aria overflow-hidden">
         <div className="px-5 lg:px-24 pt-32">
           <div className="overflow-hidden pb-20 flex flex-col gap-5 lg:flex-row">
             <div

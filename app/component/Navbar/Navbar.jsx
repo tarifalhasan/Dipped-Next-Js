@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="px-5  h-9 pt-10 flex items-center justify-between z-50 lg:px-24 left-0  fixed w-full bg-transparent">
+      <nav className="px-5 pt-5 flex items-center justify-between z-50 lg:px-28 left-0  fixed w-full bg-transparent">
         <div className="logo">
           <Link href="/">
             <Image src={logo} alt="dipped" />

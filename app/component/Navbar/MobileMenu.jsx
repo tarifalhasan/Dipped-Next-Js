@@ -9,11 +9,11 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
     <div
       className={`fixed mobile_navbar w-full h-full  bg-[#222]  ${
         isOpen ? "right-0" : "right-full"
-      }  z-50  `}
+      }  z-50 top-0 `}
     >
-      <div className="logo flex items-center m-4 justify-between">
+      <div className="logo flex  justify-between">
         <Link href="/">
-          <Image src={logo} alt="dipped" />
+          <Image alt="logo" src={logo} />
         </Link>
         <ImCross
           onClick={() => openNavbar()}
@@ -40,13 +40,13 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
           <div
             id="dropdownHover"
             className={`z-10 
-                  hidden service_dropdown
-                  bg-[#222222] divide-y divide-gray-100 absolute rounded-lg shadow w-44 `}
+                hidden service_dropdown
+                bg-[#222222] divide-y divide-gray-100 absolute rounded-lg shadow w-44 `}
           >
             <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
               <li className="text-lg" onClick={() => openNavbar()}>
                 <Link
-                  href="services"
+                  href="/services"
                   className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
                 >
                   Services

@@ -15,7 +15,7 @@ const Blog = () => {
             <Image
               className="transform transition duration-500 hover:scale-90"
               src={image1}
-              alt=""
+              alt="blog"
             />
           </div>
           <div className="flex gap-y-5 flex-col">
@@ -54,7 +54,7 @@ const Blog = () => {
             <Image
               className="transform transition duration-500 hover:scale-90"
               src={image2}
-              alt=""
+              alt="tarif al hasan"
             />
             <p className="text-base">Uncategorized</p>
             <h3 className="text-2xl">
@@ -73,7 +73,7 @@ const Blog = () => {
             <Image
               className="transform transition duration-500 hover:scale-90"
               src={image3}
-              alt=""
+              alt="tarif al hasan"
             />
             <p className="text-base">Uncategorized</p>
             <h3 className="text-2xl">
