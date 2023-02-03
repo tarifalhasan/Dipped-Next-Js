@@ -15,7 +15,6 @@ import { MdOutlineSmartDisplay } from "react-icons/md";
 import "aos/dist/aos.css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import CoverFlowSlider from "./component/sliders/CoverFlow";
 // import requerment
 import { Autoplay, FreeMode } from "swiper";
 export default function Home() {
@@ -136,7 +135,7 @@ export default function Home() {
           </div>
         </div>
         <div className="px-5 flex flex-col md:flex-row items-center lg:px-24">
-          <div className="basis-[35%]">
+          <div className="pb-10">
             <h3>OUR GALLERY</h3>
             <p className="py-5 text-base lg:text-lg">
               Praesent varius est nisl, vel mollis massa malesuada non. Aenean
@@ -144,9 +143,6 @@ export default function Home() {
               faucibus.
             </p>
             <button className="btn px-5 py-2  btn_primary">Show All</button>
-          </div>
-          <div className="basis-[65%]">
-            <CoverFlowSlider />
           </div>
         </div>
       </div>
