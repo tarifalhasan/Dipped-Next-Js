@@ -3,9 +3,13 @@ import Image from "next/image";
 const About = () => {
   return (
     <section id="services">
-      <div className="services_hero_aria relative">
+      <div className="services_hero_aria overflow-hidden relative">
         <div className="px-5 lg:px-24 pt-40">
-          <div className="text-left lg:w-[40%]">
+          <div
+            className="text-left lg:w-[40%]"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <h2 className="text-4xl leading-[16px]">OUR HISTORY</h2>
             <p className="text-base  lg:text-md py-6">
               Dipped Auto Works not only provides Las Vegas with the best car

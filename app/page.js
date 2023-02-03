@@ -27,13 +27,12 @@ export default function Home() {
   }, []);
   return (
     <section className="pt-5 md:pt-20">
-      <div className="home_banner realtive">
+      <div className="home_banner overflow-hidden realtive">
         <div className="relative px-5 pt-32 lg:px-32 ">
-          <div className="flex overflow-hidden">
+          <div className="flex ">
             <div
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+              data-aos="fade-right"
+              data-aos-duration="2000"
               className="basis-full md:basis-[70%] lg:basis-[55%]"
             >
               <h2 className="leading-[3rem]">
@@ -77,14 +76,14 @@ export default function Home() {
         </div>
         <div className="grid overflow-hidden gap-4 md:flex justify-between md:pt-10">
           <h3
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="2000"
             className="basis-[60%]"
           >
             EXCEPTIONAL QUALITY COMBINED WITH QUICK & AFFORDABLE SERVICES.
           </h3>
           <p
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-duration="2000"
             className="basis-[40%] text-base lg:text-lg"
           >
