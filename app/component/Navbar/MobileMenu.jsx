@@ -22,7 +22,9 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
       </div>
       <ul className="nav_item right-full flex flex-col gap-10  h-full  pl-10 py-9   text-left">
         <li onClick={() => openNavbar()}>
-          <Link href="/">Home</Link>
+          <Link className="active" href="/">
+            Home
+          </Link>
         </li>
         <li onClick={() => openNavbar()}>
           <Link href="/about">About</Link>
@@ -43,7 +45,7 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
                 hidden service_dropdown
                 bg-[#222222] divide-y divide-gray-100 absolute rounded-lg shadow w-44 `}
           >
-            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200 nav_item">
               <li className="text-lg" onClick={() => openNavbar()}>
                 <Link
                   href="/services"

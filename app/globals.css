@@ -42,7 +42,15 @@ body {
 }
 .nav_item > li > a {
   font-family: "Orbitron";
+  transform: translateX(0px) !important;
+  transition: 0.5s all ease !important;
   @apply font-semibold text-lg text-white;
+}
+.nav_item > li > a:hover {
+  color: #4ff;
+}
+.active {
+  color: #4ff !important;
 }
 
 @layer base {
@@ -275,19 +283,9 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .react-tel-input .form-control {
-    position: relative;
-    font-size: 14px;
-    letter-spacing: 0.01rem;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-left: 48px;
-    margin-left: 0;
-    background: #ffffff;
-    border: 1px solid #cacaca;
-    border-radius: 5px;
-    line-height: 25px;
-    height: 35px;
-    width: 232px !important;
-    outline: none;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
   }
 }

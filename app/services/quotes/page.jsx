@@ -32,7 +32,7 @@ const Services = () => {
 
           <WindowTinting />
 
-          <div className="mt-5 sm:max-w-3xl mx-auto">
+          <div className="mt-5 px-5 sm:max-w-3xl mx-auto">
             {QuotesData.map((service, index) => (
               <div key={index}>
                 <div className="grid  gap-10">
