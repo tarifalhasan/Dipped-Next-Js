@@ -25,7 +25,7 @@ const Hero = () => {
         <div className=" lg:mt-0 lg:col-span-5 flex">
           <div>
             {" "}
-            <Image className="[w-740px]" src={HeroImage} alt="mockup" />
+            <Image className="w-[880px]" src={HeroImage} alt="mockup" />
           </div>
         </div>
       </div>
