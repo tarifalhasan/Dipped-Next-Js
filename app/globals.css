@@ -57,6 +57,9 @@ body {
   h2 {
     @apply font-bold text-4xl leading-[75px] text-white;
   }
+  img {
+    @apply w-full;
+  }
   h3 {
     @apply font-bold text-[31px] leading-[39px] text-white;
   }

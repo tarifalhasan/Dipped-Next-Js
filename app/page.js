@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { HomePageServicesSlider } from "./StaticData/services";
 const inter = Inter({ subsets: ["latin"] });
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { Hero } from "./component";
 import Image from "next/image";
 import line from "../public/img/line.png";
 import Link from "next/link";
@@ -27,50 +28,13 @@ export default function Home() {
   }, []);
   return (
     <section className="pt-5 md:pt-20">
-      <div className="home_banner overflow-hidden realtive">
-        <div className="relative px-5 pt-32 lg:px-32 ">
-          <div className="flex ">
-            <div
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              className="basis-full md:basis-[70%] lg:basis-[55%]"
-            >
-              <h2 className="leading-[3rem]">
-                The Best Custom Automotive Shop In Las Vegas
-              </h2>
-              <p className="py-7 text-base lg:text-lg text-white opacity-100">
-                Dipped Auto Works specializes in full-car transformations
-                including vehicle wraps, window tinting, ceramic coating, and
-                more!
-              </p>
-              <div className="btn_group mt-1 gap-4 flex">
-                <button className="btn px-12 py-2 btn_primary">Call Us</button>
-                <button className="btn flex px-2 py-2 gap-2 btn_secondary">
-                  <MdOutlineSmartDisplay /> Play Video
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-[60%] top-[50%] sm:top-[49%] lg:top-[88%] left-[40%] absolute bg-[#4ffef3] h-1"></div>
-      </div>
-      <div className="px-5 mt-0 md:mt-8 lg:mt-[2rem] lg:px-24">
-        <div className="flex py-5 pt-[1rem] sm:pt-1 md:justify-end gap-5 items-start">
-          <div>
-            <h3>Full Car Transform</h3>
-            <Link href="/">Learn more...</Link>
-          </div>
-          <div className="flex mt-2 items-center gap-3">
-            <IoIosArrowBack className="text-xl" />
-            <IoIosArrowForward className="text-xl" />
-          </div>
-        </div>
-      </div>
+      <Hero />
+
       <div>
         <Image src={line} alt="line" />
       </div>
       {/* services slider */}
-      <div className="mt-32 px-5 lg:px-24">
+      <div className="mt-32 pb-10 px-5 lg:px-24">
         <div className="services_slider_title">
           <h5>SERVICES</h5>
         </div>
@@ -97,6 +61,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+
       {/* slider here */}
 
       <div className="mt-5">
@@ -124,6 +89,25 @@ export default function Home() {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="px-5 pb-10 lg:px-52">
+          <div className="grid gap-2 grid-cols-1 md:grid-cols-2">
+            <div className="flex items-center gap-4 mt-6 md:mt-0">
+              <h1 className="text-5xl md:text-8xl text-[#4FFEF3]">01</h1>
+              <h3 className="text-2xl  md:text-3xl">VEHICLE WRAP</h3>
+            </div>
+
+            <div className="py-2 md:mt-20">
+              <p className="text-base lg:text-lg">
+                Praesent varius est nisl, vel mollis massa malesuada non. Aenean
+                nec diam ante. Interdum et malesuada fames ac ante ipsum primis
+                in faucibus.
+              </p>
+              <button className="btn px-4 py-2 mt-5 btn_secondary text-sm">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* ===== SLIDER 2 ===== */}

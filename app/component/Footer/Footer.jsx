@@ -10,7 +10,7 @@ const Footer = () => {
       <Image src={shapeLine} alt="shape" />
       <footer className="px-5 lg:px-24 2xl:px-0">
         <Link href="/">
-          <Image src={logo} alt="logo" />
+          <Image className="w-auto" src={logo} alt="logo" />
         </Link>
         <div className="flex flex-col md:flex-row	 gap-9 justify-between">
           <div className="brand basis-[40%]">

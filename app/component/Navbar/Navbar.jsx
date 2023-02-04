@@ -16,8 +16,8 @@ const Navbar = () => {
   };
 
   return (
-    <header>
-      <nav className="px-5 pt-5 flex items-center justify-between z-50 lg:px-28 left-0  fixed w-full bg-transparent">
+    <header className="container relative">
+      <nav className="px-5 lg:px-24 pt-5 flex items-center justify-between z-50 max-w-[1440px] w-full  mx-auto left-0 fixed top-0  right-0 bg-transparent">
         <div className="logo">
           <Link href="/">
             <Image src={logo} alt="dipped" />
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div>
           <ul className="nav_item hidden md:flex items-center gap-10">
             <li>
-              <Link className="active" href="/">
+              <Link className={"active"} href="/">
                 Home
               </Link>
             </li>
